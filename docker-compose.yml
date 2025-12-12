@@ -1,0 +1,9 @@
+services:
+  whatweb:
+    image: whatweb
+    container_name: whatweb
+    # Standard-Argumente (werden an ENTRYPOINT ["whatweb"] angehängt)
+    command: ["-v", "-a", "3", "https://example.com"]
+    volumes:
+      - ./data:/data
+    restart: "no"
