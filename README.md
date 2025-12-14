@@ -29,6 +29,12 @@ Folgendes muss vorab auf dem System installiert sein (oder installiert werden):
    ```
    Es kann ein wenig dauern, bis der Build fertig ist. 
 
+4. **Alternative**: fertiges Image aus Docker Hub laden
+   Wer das Image nicht selbst bauen möchte, kann auch ein fertiges Image aus dem Docker Hub downloaden:
+   ```bash
+   docker pull azurielus/whatweb:latest
+   ```
+
 ## Nutzung des erstellten Docker Images
 Nun kann das erstellte Docker Image mit Docker Compose gestartet / genutzt werden. Hiefür gibt es zwei Möglichkeiten:
 1. Nutzung via docker-compose.yml
